@@ -12,6 +12,8 @@
 		FD6B54A72165BE9A00272502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6B54A52165BE9A00272502 /* Main.storyboard */; };
 		FD6B54A92165BE9A00272502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6B54A82165BE9A00272502 /* Assets.xcassets */; };
 		FD6B54AC2165BE9A00272502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6B54AA2165BE9A00272502 /* LaunchScreen.storyboard */; };
+		FD6B54B62165C2FD00272502 /* ServiceColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B54B52165C2FD00272502 /* ServiceColors.swift */; };
+		FD6B54B82165CA7000272502 /* DelegateColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B54B72165CA7000272502 /* DelegateColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FD6B54A82165BE9A00272502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD6B54AB2165BE9A00272502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD6B54AD2165BE9A00272502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6B54B52165C2FD00272502 /* ServiceColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceColors.swift; sourceTree = "<group>"; };
+		FD6B54B72165CA7000272502 /* DelegateColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,32 @@
 		FD6B54A02165BE9A00272502 /* MultipeerConnectivityExample */ = {
 			isa = PBXGroup;
 			children = (
+				FD6B54B42165C2CA00272502 /* view */,
+				FD6B54B32165C2BB00272502 /* controller */,
 				FD6B54A12165BE9A00272502 /* AppDelegate.swift */,
-				FD6B54A32165BE9A00272502 /* ViewController.swift */,
-				FD6B54A52165BE9A00272502 /* Main.storyboard */,
-				FD6B54A82165BE9A00272502 /* Assets.xcassets */,
-				FD6B54AA2165BE9A00272502 /* LaunchScreen.storyboard */,
 				FD6B54AD2165BE9A00272502 /* Info.plist */,
 			);
 			path = MultipeerConnectivityExample;
+			sourceTree = "<group>";
+		};
+		FD6B54B32165C2BB00272502 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD6B54A32165BE9A00272502 /* ViewController.swift */,
+				FD6B54B52165C2FD00272502 /* ServiceColors.swift */,
+				FD6B54B72165CA7000272502 /* DelegateColors.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FD6B54B42165C2CA00272502 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FD6B54A52165BE9A00272502 /* Main.storyboard */,
+				FD6B54AA2165BE9A00272502 /* LaunchScreen.storyboard */,
+				FD6B54A82165BE9A00272502 /* Assets.xcassets */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6B54B82165CA7000272502 /* DelegateColors.swift in Sources */,
+				FD6B54B62165C2FD00272502 /* ServiceColors.swift in Sources */,
 				FD6B54A42165BE9A00272502 /* ViewController.swift in Sources */,
 				FD6B54A22165BE9A00272502 /* AppDelegate.swift in Sources */,
 			);
